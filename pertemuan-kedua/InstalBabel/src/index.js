@@ -8,8 +8,13 @@
 // }
 
 // getName(); 
+let person = {
+    id : 1,
+    name : 'hilman'
+};
 
-let nama = "hilman";
-let nama = 'ramadhan';
-console.log(nama);
+person = {
+    id : 2, name : 'test'
+}
 
+console.log(person);
