@@ -1,5 +1,15 @@
-class Test{
+// function getName(){
+//     if(true){
+//         var nama = 'Hilman';
+//         console.log(nama);
+//     } else {
+//         console.log(nama);
+//     }
+// }
 
-}
+// getName(); 
 
-console.log(Test);
+let nama = "hilman";
+let nama = 'ramadhan';
+console.log(nama);
+
