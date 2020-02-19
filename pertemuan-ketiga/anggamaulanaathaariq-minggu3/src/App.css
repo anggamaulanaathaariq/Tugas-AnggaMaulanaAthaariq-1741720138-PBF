@@ -1,3 +1,10 @@
+.Text {
+  text-size-adjust: h1;
+  font-size: 40px;
+}
+h1{
+  font-size: 50px;
+}
 .App {
   text-align: center;
 }
