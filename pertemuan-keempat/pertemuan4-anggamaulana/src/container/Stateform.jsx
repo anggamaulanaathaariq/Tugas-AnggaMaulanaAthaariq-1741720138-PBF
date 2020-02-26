@@ -13,9 +13,11 @@ const Stateform = () =>{
                 <tr>
                 </tr>
                 <div className="container">
-                    <label><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" nama="uname" required/>
-                    <label><b>Password</b></label>
+                    
+                    <b><label for="input" class="col-sm-2 col-form-label"> Username</label></b>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="Enter Username" nama="uname" required/>
+                    <label><b>Password</b></label></div>
                     <input type="password" placeholder="Enter Password" nama="psw" required/>
                 
                     <button type="submit">Login</button>
