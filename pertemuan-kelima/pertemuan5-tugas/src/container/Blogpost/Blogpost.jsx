@@ -103,7 +103,7 @@ class Blogpost extends Component{
                 <h2>Daftar Mahasiswa: </h2>
                 {
                     this.state.listMahasiswa.map(mahasiswa => {
-                        return <Post nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status}  hapusArtikel={this.handleHapusArtikel}/>
+                        return <Post nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status} idMahasiswa={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa }/>
                     })
                 }
         </div>
