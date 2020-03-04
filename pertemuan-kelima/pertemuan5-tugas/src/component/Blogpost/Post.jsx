@@ -4,7 +4,7 @@ const Post = (props) => {
     return (
         <div className="mahasiswa">
             <div className="gambar-mahasiswa">
-                <img src="https://i.pinimg.com/originals/3a/90/54/3a90548004c9e800f97a8b224108073a.jpg" alt="Gambar Tumbnail Artikel"/>
+                <img src="https://i.pinimg.com/originals/64/fa/8c/64fa8ca6a27c8d049c2f78d16a3f2877.jpg" alt="Gambar Tumbnail Artikel"/>
             </div>
             {/* <div className="konten-artikel">
                 <div className="judul-artikel">{props.judul}</div>
