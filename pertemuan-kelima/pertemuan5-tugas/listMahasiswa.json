@@ -1,6 +1,7 @@
 {
   "mahasiswa": [
     {
+      "id": 1,
       "NIM": 180823453,
       "nama": "Mahasiswa 1",
       "alamat": "Jl. Soekarno Hatta No. 9 Malang",
@@ -9,11 +10,39 @@
       "status": "aktif"
     },
     {
+      "id": 2,
       "NIM": 140823453,
       "nama": "Mahasiswa X",
       "alamat": "Jl. Menur No. 9 Surabaya",
       "hp": "081802023523",
       "angkatan": 2014,
+      "status": "lulus"
+    },
+    {
+      "id": 1583346586745,
+      "NIM": "1741720138",
+      "nama": "Angga Maulana Athaariq",
+      "alamat": "Terjauh",
+      "hp": "02810-4-4810",
+      "angkatan": "2017",
+      "status": "terlahir"
+    },
+    {
+      "id": 1583346703141,
+      "NIM": "123-14409129",
+      "nama": "DPMB",
+      "alamat": "Wijilan",
+      "hp": "097790",
+      "angkatan": "2019",
+      "status": "aktif"
+    },
+    {
+      "id": 1583347808010,
+      "NIM": "132424441-0",
+      "nama": "Lisa",
+      "alamat": "Korea Selatan",
+      "hp": "021049481",
+      "angkatan": "2018",
       "status": "lulus"
     }
   ]

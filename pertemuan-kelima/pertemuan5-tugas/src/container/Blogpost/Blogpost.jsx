@@ -6,7 +6,8 @@ class Blogpost extends Component{
     state = {
         listMahasiswa: [],
         insertMahasiswa: {
-            NIM: "",
+            id: 1,
+            NIM: 1,
             nama: "",
             alamat: "",
             hp: "",
@@ -37,6 +38,7 @@ class Blogpost extends Component{
     handleTambahMahasiswa = (event) => {
         let formInsertMahasiswa = {...this.state.insertMahasiswa};
         let timestamp = new Date().getTime();
+        formInsertMahasiswa['id'] = timestamp;
         formInsertMahasiswa[event.target.name] = event.target.value;
         this.setState({
             insertMahasiswa: formInsertMahasiswa
@@ -103,7 +105,7 @@ class Blogpost extends Component{
                 <h2>Daftar Mahasiswa: </h2>
                 {
                     this.state.listMahasiswa.map(mahasiswa => {
-                        return <Post NIM={mahasiswa.NIM} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status} idMahasiswa={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa }/>
+                        return <Post nim={mahasiswa.NIM} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status} idMahasiswa={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa }/>
                     })
                 }
         </div>
