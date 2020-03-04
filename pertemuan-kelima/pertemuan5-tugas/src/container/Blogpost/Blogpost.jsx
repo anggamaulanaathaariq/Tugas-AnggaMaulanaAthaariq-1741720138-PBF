@@ -60,6 +60,7 @@ class Blogpost extends Component{
         return(
             <div className="post-artikel">
                 <div className="form pb-2 border-bottom">
+                <h2>Tambah Mahasiswa: </h2>
                     <div className="form-group row">
                         <label htmlFor="title" className="col-sm-2 col-form-label">NIM</label>
                         <div className="col-sm-10">
@@ -97,9 +98,9 @@ class Blogpost extends Component{
                         </div>
                     </div>
                         
-                    <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
+                    <button type="submit" className="btn btn-success" onClick={this.handleTombolSimpan}>Simpan</button>
                 </div>
-                <h2>Daftar Mahasiswa</h2>
+                <h2>Daftar Mahasiswa: </h2>
                 {
                     this.state.listMahasiswa.map(mahasiswa => {
                         return <Post nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status}  hapusArtikel={this.handleHapusArtikel}/>

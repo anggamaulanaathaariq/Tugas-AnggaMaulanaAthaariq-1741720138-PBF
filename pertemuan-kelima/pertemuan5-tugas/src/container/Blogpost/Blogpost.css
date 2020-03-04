@@ -1,7 +1,7 @@
 .mahasiswa{
     width: 100%;
     padding: 10px;
-    border: 1px solid blue;
+    border: 1px solid orange;
     border-radius: 4px;
     margin-bottom: 10px;
     box-shadow: 0 0 16px rgba(0, 0, 0,0.5);
@@ -50,3 +50,4 @@
     font-size: 16px;
     margin-bottom: 10px;
 }
+

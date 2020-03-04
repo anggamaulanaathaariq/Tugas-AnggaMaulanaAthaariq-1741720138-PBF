@@ -13,9 +13,14 @@ code {
 }
 
 #sidebar{
-  background-color: aquamarine;
+  background-color: orange;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: bold;
+  
 }
 
 #content{
-  background-color: lightgray;
+  background-color: seashell;
 }
+

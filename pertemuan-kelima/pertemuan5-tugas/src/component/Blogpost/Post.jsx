@@ -4,7 +4,7 @@ const Post = (props) => {
     return (
         <div className="mahasiswa">
             <div className="gambar-mahasiswa">
-                <img src="http://placeimg.com/640/480/any" alt="Gambar Tumbnail Artikel"/>
+                <img src="https://i.pinimg.com/originals/3a/90/54/3a90548004c9e800f97a8b224108073a.jpg" alt="Gambar Tumbnail Artikel"/>
             </div>
             {/* <div className="konten-artikel">
                 <div className="judul-artikel">{props.judul}</div>
@@ -18,7 +18,7 @@ const Post = (props) => {
                 <div className="hp-mahasiswa">{props.hp}</div>
                 <div className="angkatan-mahasiswa">{props.angkatan}</div>
                 <p className="status-mahasiswa">{props.status}</p>
-                <button className="btn btn-sm btn-warning" onClick={props.hapusMahasiswa}>Hapus</button>
+                <button className="btn btn-sm btn-danger" onClick={props.hapusMahasiswa}>Hapus</button>
             </div>
         </div>
     )
