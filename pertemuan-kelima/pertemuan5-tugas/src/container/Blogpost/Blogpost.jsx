@@ -6,7 +6,7 @@ class Blogpost extends Component{
     state = {
         listMahasiswa: [],
         insertMahasiswa: {
-            nim: "",
+            NIM: "",
             nama: "",
             alamat: "",
             hp: "",
@@ -64,7 +64,7 @@ class Blogpost extends Component{
                     <div className="form-group row">
                         <label htmlFor="title" className="col-sm-2 col-form-label">NIM</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control" id="nim" name="nim" onChange={this.handleTambahMahasiswa}/>
+                            <input type="text" className="form-control" id="NIM" name="NIM" onChange={this.handleTambahMahasiswa}/>
                         </div>
                     </div>
                     <div className="form-group row">
@@ -103,7 +103,7 @@ class Blogpost extends Component{
                 <h2>Daftar Mahasiswa: </h2>
                 {
                     this.state.listMahasiswa.map(mahasiswa => {
-                        return <Post nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status} idMahasiswa={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa }/>
+                        return <Post NIM={mahasiswa.NIM} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status} idMahasiswa={mahasiswa.id} hapusMahasiswa={this.handleHapusMahasiswa }/>
                     })
                 }
         </div>
