@@ -6,7 +6,7 @@ class Blogpost extends Component{
     state = {
         listMahasiswa: [],
         insertMahasiswa: {
-            NIM: 1,
+            nim: "",
             nama: "",
             alamat: "",
             hp: "",
@@ -16,40 +16,41 @@ class Blogpost extends Component{
     }
 
     ambilDataDariServerAPI=()=> {
-        fetch('http://localhost:3002/mahasiswa')
+        fetch('http://localhost:3001/mahasiswa')
         .then(response => response.json())
         .then(jsonHasilAmbilDariAPI => {
             this.setState({
-                listArtikel: jsonHasilAmbilDariAPI
+                listMahasiswa: jsonHasilAmbilDariAPI
             })
         })
     }
+      
     componentDidMount(){
-            this.ambilDataDariServerAPI()
+        this.ambilDataDariServerAPI()
+       
     }
-    handleHapusArtikel = (data) =>{
-        fetch(`http://localhost:3002/mahasiswa/${data}`, {method: 'DELETE'})
+    handleHapusMahasiswa = (data) =>{
+        fetch(`http://localhost:3001/mahasiswa/${data}`, {method: 'DELETE'})
         .then(res => { this.ambilDataDariServerAPI()
         })
     }
-    handleTambahArtikel = (event) => {
-        let formInsertArtikel = {...this.state.insertArtikel};
+    handleTambahMahasiswa = (event) => {
+        let formInsertMahasiswa = {...this.state.insertMahasiswa};
         let timestamp = new Date().getTime();
-        formInsertArtikel['id'] = timestamp;
-        formInsertArtikel[event.target.name] = event.target.value;
+        formInsertMahasiswa[event.target.name] = event.target.value;
         this.setState({
-            insertArtikel: formInsertArtikel
+            insertMahasiswa: formInsertMahasiswa
         });
     }
 
     handleTombolSimpan = () => {
-        fetch('http://localhost:3002/mahasiswa',{
+        fetch('http://localhost:3001/mahasiswa',{
             method:'post',
             headers: {
                 'Accept': 'application/json',
                 'content-Type': 'application/json'
-            }  ,
-            body: JSON.stringify(this.state.insertArtikel)
+            },
+            body: JSON.stringify(this.state.insertMahasiswa)
         })
         .then((Response) => {
             this.ambilDataDariServerAPI();
@@ -60,23 +61,48 @@ class Blogpost extends Component{
             <div className="post-artikel">
                 <div className="form pb-2 border-bottom">
                     <div className="form-group row">
-                        <label htmlFor="title" className="col-sm-2 col-form-label">Judul</label>
+                        <label htmlFor="title" className="col-sm-2 col-form-label">NIM</label>
                         <div className="col-sm-10">
-                            <input type="text" className="form-control" id="title" name="title" onChange={this.handleTambahArtikel}/>
+                            <input type="text" className="form-control" id="nim" name="nim" onChange={this.handleTambahMahasiswa}/>
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="body" className="col-sm-2 col-form-label">Isi</label>
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Nama</label>
                         <div className="col-sm-10">
-                            <textarea className="form-control" id="body" name="body" rows="3" onChange={this.handleTambahArtikel}></textarea>
+                            <input type="text" className="form-control" id="nama" name="nama" onChange={this.handleTambahMahasiswa}/>
                         </div>
                     </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Alamat</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="alamat" name="alamat" onChange={this.handleTambahMahasiswa}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">HP</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="hp" name="hp" onChange={this.handleTambahMahasiswa}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Angkatan</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="angkatan" name="angkatan" onChange={this.handleTambahMahasiswa}/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label htmlFor="title" className="col-sm-2 col-form-label">Status</label>
+                        <div className="col-sm-10">
+                            <input type="text" className="form-control" id="status" name="status" onChange={this.handleTambahMahasiswa}/>
+                        </div>
+                    </div>
+                        
                     <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
                 </div>
-                <h2>Daftar Artikel</h2>
+                <h2>Daftar Mahasiswa</h2>
                 {
-                    this.state.listArtikel.map(artikel => {
-                        return <Post key={artikel.id} judul={artikel.title} isi={artikel.body} idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel}/>
+                    this.state.listMahasiswa.map(mahasiswa => {
+                        return <Post nim={mahasiswa.nim} nama={mahasiswa.nama} alamat={mahasiswa.alamat}  hp={mahasiswa.hp} angkatan={mahasiswa.angkatan} status={mahasiswa.status}  hapusArtikel={this.handleHapusArtikel}/>
                     })
                 }
         </div>
