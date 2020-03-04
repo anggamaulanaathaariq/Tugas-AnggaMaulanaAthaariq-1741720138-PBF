@@ -16,7 +16,7 @@ class Blogpost extends Component{
     }
 
     ambilDataDariServerAPI=()=> {
-        fetch('http://localhost:3001/mahasiswa')
+        fetch('http://localhost:3001/mahasiswa?_sort=nama&_order=desc')
         .then(response => response.json())
         .then(jsonHasilAmbilDariAPI => {
             this.setState({
