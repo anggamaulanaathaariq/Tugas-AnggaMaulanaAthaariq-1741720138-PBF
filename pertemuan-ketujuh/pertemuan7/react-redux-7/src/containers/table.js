@@ -44,18 +44,20 @@ class Table extends Component {
                             <td style={{
                                 textDecoration: todo.completed ? "line-through" : "none"
                                 }}
-                                > {todo.text} {todo.completed === true ? "(completed)" : ""}
+                                > 
+                                {todo.text} {todo.completed === true ? "(completed)" : ""}
                                 </td>
                             <td>
-                                <span className="fas fa-minus-circle" onClick={() => this.props.deleteTodo(todo.id)}
+                                <i className="fas fa-minus-circle" 
+                                onClick={() => this.props.deleteTodo(todo.id)}
                                 style={{
-                                    color: "white",
+                                    color: "red",
                                     fontSize: "20pt",
                                     marginRight: "20px"
                                     }}
                                     />
-                                    <span className="fas fa-check-circle" onClick={() => this.props.toggleTodo(todo.id)}
-                                    style={{ color: "white", fontSize: "20pt" }}
+                                    <i className="fas fa-check-circle" onClick={() => this.props.toggleTodo(todo.id)}
+                                    style={{ color: "green", fontSize: "20pt" }}
                                     />
                             </td>
                     </tr>
