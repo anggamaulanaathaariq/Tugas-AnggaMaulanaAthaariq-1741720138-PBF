@@ -7,6 +7,6 @@ Oleh :
 
 Nama : Angga Maulana Athaariq
 
-TI-3B : TI-3B
+Kelas : TI-3B
 
 React : App-Cuaca
