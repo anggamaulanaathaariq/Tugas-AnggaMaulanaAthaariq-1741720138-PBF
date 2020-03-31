@@ -4,8 +4,7 @@ import "./form.style.css";
 const Form = props => {
   return (
     <div className="container">
-      <h1>Info Cuaca Hari Ini</h1>
-    
+      <h1>Cuaca Hari Ini: </h1>
     <div className="container h-100">
       <form onSubmit={props.loadweather}>
         <div>{props.error ? error() : ""}</div>
@@ -36,6 +35,7 @@ const Form = props => {
         </div>
       </form>
     </div>
+    
     </div>
   );
 };
