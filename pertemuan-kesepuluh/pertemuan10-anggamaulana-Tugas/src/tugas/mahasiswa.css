@@ -30,12 +30,6 @@
     vertical-align: top;
 }
 
-.gambar-mahasiswa img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .konten-mahasiswa{
     flex: 1;
 }
