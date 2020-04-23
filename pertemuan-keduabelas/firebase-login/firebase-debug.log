@@ -1,0 +1,54 @@
+[debug] [2020-04-23T01:47:34.260Z] ----------------------------------------------------------------------
+[debug] [2020-04-23T01:47:34.263Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WINDOWS 10\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-23T01:47:34.263Z] CLI Version:   8.1.1
+[debug] [2020-04-23T01:47:34.264Z] Platform:      win32
+[debug] [2020-04-23T01:47:34.264Z] Node Version:  v10.15.3
+[debug] [2020-04-23T01:47:34.265Z] Time:          Thu Apr 23 2020 08:47:34 GMT+0700 (Western Indonesia Time)
+[debug] [2020-04-23T01:47:34.265Z] ----------------------------------------------------------------------
+[debug] [2020-04-23T01:47:34.265Z] 
+[debug] [2020-04-23T01:47:34.278Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-23T01:47:34.279Z] > authorizing via signed-in user
+[debug] [2020-04-23T01:47:34.280Z] [iam] checking project fir-login-fb961 for permissions ["firebase.projects.get"]
+[debug] [2020-04-23T01:47:34.284Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-login-fb961:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-23T01:47:36.191Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 01:47:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1130","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-23T01:47:36.196Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-login-fb961  
+ 
+[debug] [2020-04-23T01:47:37.098Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 01:47:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Kuliah\Sem6\Pemrograman Berbasis Framework\pertemuan-keduabelas\firebase-login'...
+[info] 
+[debug] [2020-04-23T01:47:37.120Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-login-fb961/webApps/-/config  
+ 
+[debug] [2020-04-23T01:47:38.327Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 01:47:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: (public)
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-04-23T03:18:00.525Z] ----------------------------------------------------------------------
+[debug] [2020-04-23T03:18:00.527Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\WINDOWS 10\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-23T03:18:00.527Z] CLI Version:   8.1.1
+[debug] [2020-04-23T03:18:00.528Z] Platform:      win32
+[debug] [2020-04-23T03:18:00.528Z] Node Version:  v10.15.3
+[debug] [2020-04-23T03:18:00.528Z] Time:          Thu Apr 23 2020 10:18:00 GMT+0700 (Western Indonesia Time)
+[debug] [2020-04-23T03:18:00.528Z] ----------------------------------------------------------------------
+[debug] [2020-04-23T03:18:00.529Z] 
+[debug] [2020-04-23T03:18:00.537Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-23T03:18:00.537Z] > authorizing via signed-in user
+[debug] [2020-04-23T03:18:00.537Z] [iam] checking project fir-login-fb961 for permissions ["firebase.projects.get"]
+[debug] [2020-04-23T03:18:00.539Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-23T03:18:00.540Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-23T03:18:01.650Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 03:18:01 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-23T03:18:01.664Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-login-fb961:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-23T03:18:03.482Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 03:18:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1199","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-23T03:18:03.485Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-login-fb961  
+ 
+[debug] [2020-04-23T03:18:04.197Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 03:18:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Kuliah\Sem6\Pemrograman Berbasis Framework\pertemuan-keduabelas\firebase-login'...
+[info] 
+[debug] [2020-04-23T03:18:04.202Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-login-fb961/webApps/-/config  
+ 
+[debug] [2020-04-23T03:18:05.632Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 23 Apr 2020 03:18:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: (public)
+[info] +  hosting: Local server: http://localhost:5000
