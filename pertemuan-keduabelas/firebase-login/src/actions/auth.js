@@ -75,12 +75,13 @@ export const logoutUser = () => (dispatch) => {
       dispatch(logoutError());
     });
 };
-export const verifyAuth = () => (dispatch) => {
+
+export const verifyAuth = () => dispatch => {
   dispatch(verifyRequest());
-  myFirebase.auth().onAuthStateChanged((user) => {
+  myFirebase.auth().onAuthStateChanged(user => {
     if (user !== null) {
       dispatch(receiveLogin(user));
     }
     dispatch(verifySuccess());
-  });
-};
+  })
+}
