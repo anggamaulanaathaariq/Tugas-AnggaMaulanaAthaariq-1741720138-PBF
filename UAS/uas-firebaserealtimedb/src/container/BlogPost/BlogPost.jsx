@@ -46,6 +46,9 @@ class BlogPost extends Component{
      });
      this.setState({listBuku: newState});
     }
+    handleInfoBuku = (idBuku) => {        // fungsi yang meng-handle button action hapus data
+        
+       }
 
     handleTombolSimpan = (event) => {            // fungsi untuk meng-handle tombol simpan
       
@@ -86,6 +89,7 @@ class BlogPost extends Component{
         return(
             <div className="post-artikel">
                 <div className="form pb-2 border-bottom">
+                    <h2>List Buku App</h2>
                     <div className="form-group row">
                         <label htmlFor="title" className="col-sm-2 col-form-label">Judul</label>
                         <div className="col-sm-10">
@@ -122,7 +126,7 @@ class BlogPost extends Component{
                 <h2>Daftar Buku</h2>
                 {
                     this.state.listBuku.map(buku => {  // looping dan masukkan untuk setiap data yang ada di listArtikel ke variabel artikel
-                        return <Post key={buku.uid} judul={buku.title} penulis={buku.penulis} date={buku.date} penerbit={buku.penerbit} harga={buku.harga} idBuku={buku.uid} hapusBuku={this.handleHapusBuku}/>     // mappingkan data json dari API sesuai dengan kategorinya
+                        return <Post key={buku.uid} judul={buku.title} penulis={buku.penulis} date={buku.date} penerbit={buku.penerbit} harga={buku.harga} idBuku={buku.uid} hapusBuku={this.handleHapusBuku} infoBuku={this.handleInfoBuku} />     // mappingkan data json dari API sesuai dengan kategorinya
                     })
                 }
             </div>
