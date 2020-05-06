@@ -14,6 +14,10 @@ code {
 
 #sidebar{
   background-color: tomato;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: bold;
+  
 }
 
 #content{
