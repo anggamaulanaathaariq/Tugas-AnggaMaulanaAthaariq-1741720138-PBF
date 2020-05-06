@@ -1,0 +1,36 @@
+{	
+ "posts": [
+  {
+	"userId": 1,
+	"id": 1,
+	"judul": "Panduan Lengkap Memahami JSON", 
+	"penulis": "Agus Prawoto Hadi", 
+	"penerbit": "Penerbit Andi",
+	"date":"2018-01-25"
+  },
+  {
+	"userId": 1,
+	"id": 2,
+	"judul": "Menguasai Efek Khusus dengan Photoshop", 
+	"penulis": "Jubilee Enterprise", 
+	"penerbit": "Elex Media Komputindo",
+	"date":"2017-09-25"
+  },
+ {
+	"userId": 1,
+	"id": 3,
+	"judul": "Algoritma & Teknik Pemrograman", 
+	"penulis": "Budi Sutejo", 
+	"penerbit": "Penerbit Andi",
+	"date":"2016-04-27"
+  },
+  {
+	"userId": 1,
+	"id": 4,
+	"judul": "Computers and Programming", 
+	"penulis": "Francis Scheid", 
+	"penerbit": "McGraw-Hill",
+	"date":"2016-04-27"
+  }
+]
+}

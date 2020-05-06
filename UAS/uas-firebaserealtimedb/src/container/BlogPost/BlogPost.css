@@ -1,0 +1,46 @@
+.buku{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid maroon;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.gambar-buku{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 20px;
+    width: 15%;
+}
+
+.gambar-buku img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.konten-buku{
+    flex: 1;
+}
+
+.konten-buku div.judul-buku{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.konten-buku p.isi-buku{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.konten-buku div.harga-buku{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
