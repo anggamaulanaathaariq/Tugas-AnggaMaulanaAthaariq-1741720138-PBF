@@ -28,7 +28,12 @@ const Post = (props) => {
             <div className="button-buku3">
                 <a href="https://www.gramedia.com/search?q=informatika" target="_blank">
                  <button className="btn btn-sm btn-success" 
-                onClick={() => {if (window.confirm('Apakah anda akan melakukan pencarian produk ini?')) props.infoBuku(props.idBuku)}}>Beli</button>
+                onClick={() => {if (window.confirm('Apakah anda ingin melakukan pembelian produk ini?')) props.infoBuku(props.idBuku)}}>Beli</button>
+                </a>
+            </div>
+            
+            <div className="button-buku4">
+           <a href="https://play.google.com/store/apps/details?id=com.appsfoundry.scoop&hl=en">Download App For Free <br/>
                 </a>
             </div>
             </div>
