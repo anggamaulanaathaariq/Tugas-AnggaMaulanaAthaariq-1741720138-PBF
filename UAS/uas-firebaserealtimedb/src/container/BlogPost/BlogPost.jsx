@@ -46,6 +46,7 @@ class BlogPost extends Component{
      });
      this.setState({listBuku: newState});
     }
+    
     handleInfoBuku = (idBuku) => {        // fungsi yang meng-handle button action hapus data
         
        }
@@ -123,13 +124,23 @@ class BlogPost extends Component{
                     <input type="hidden" name="uid" ref="uid" />
                     <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
                 </div>
+                
                 <h2>Daftar Buku</h2>
                 {
                     this.state.listBuku.map(buku => {  // looping dan masukkan untuk setiap data yang ada di listArtikel ke variabel artikel
                         return <Post key={buku.uid} judul={buku.title} penulis={buku.penulis} date={buku.date} penerbit={buku.penerbit} harga={buku.harga} idBuku={buku.uid} hapusBuku={this.handleHapusBuku} infoBuku={this.handleInfoBuku} />     // mappingkan data json dari API sesuai dengan kategorinya
                     })
                 }
+                
+                <footer>
+                    <address>
+                    Link Youtube: <a href="https://www.youtube.com/channel/UCCJDhJKsm18N1GQ7auBe7fA?view_as=subscriber">Angga Maulana Athaariq</a> <br/>
+                    Link Github For This Code: <a href="https://github.com/anggamaulanaathaariq/Tugas-AnggaMaulanaAthaariq-1741720138-PBF/tree/master/UAS/uas-firebaserealtimedb">anggamaulanaathaariq</a> <br/>
+                    </address>
+                </footer>
             </div>
+
+            
         )
     }
 }
