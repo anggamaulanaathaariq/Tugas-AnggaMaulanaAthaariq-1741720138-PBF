@@ -4,11 +4,16 @@ import Post from "../../component/BlogPost/Post";
 import firebase from "firebase";
 import API from "../../services";
 import firebaseConfig from "../../firebase/config";
+import fire from '../../config/fire';
 
 class BlogPost extends Component{
+
+    logout(){
+        fire.auth().signOut();
+    }
   constructor(props) {
       super(props);
-      firebase.initializeApp(firebaseConfig);
+    //   firebase.initializeApp(firebaseConfig);
 
       this.state = {
           listBuku: []
@@ -88,11 +93,15 @@ class BlogPost extends Component{
 
     render() {
         return(
+
             <div className="post-artikel">
                 <div className="form pb-2 border-bottom">
                     <h2>List Buku App</h2>
+            <div className="button-logout">
+            <button className="btn btn-sm btn-dark"  onClick={this.logout}>Logout</button>
+            </div>
                     <div className="form-group row">
-                        <label htmlFor="title" className="col-sm-2 col-form-label">Judul</label>
+                        <label htmlFor="title" placeholder="Judul" className="col-sm-2 col-form-label">Judul</label>
                         <div className="col-sm-10">
                             <input type="text" className="form-control" id="title" name="title" ref="judulBuku" />
                         </div>
@@ -124,7 +133,7 @@ class BlogPost extends Component{
                     <input type="hidden" name="uid" ref="uid" />
                     <button type="submit" className="btn btn-primary" onClick={this.handleTombolSimpan}>Simpan</button>
                 </div>
-                
+               
                 <h2>Daftar Buku</h2>
                 {
                     this.state.listBuku.map(buku => {  // looping dan masukkan untuk setiap data yang ada di listArtikel ke variabel artikel

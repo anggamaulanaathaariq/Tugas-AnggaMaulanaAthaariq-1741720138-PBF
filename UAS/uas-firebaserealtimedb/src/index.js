@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import App from './App';
 
-import BlogPost from "./container/BlogPost/BlogPost";
-
-ReactDOM.render(<BlogPost />, document.getElementById('content'));
+ReactDOM.render(<App />, document.getElementById('content'));
 
 serviceWorker.unregister();
